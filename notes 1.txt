@@ -1,0 +1,8 @@
+1- ******revoir modèle des connecteur 2pts: inverser le sens
+2- ******Vérifier empreinte du buzzer
+3- ******Changer empreinte buzzer
+4- *****Vérifier les vias dans partie convertisseur
+5- *****Changer modèle des connecteur- Prendre composants de la bibliothèque perso
+6- *****Revoir contours de carte - visibilité sérigraphie
+
+

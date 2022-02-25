@@ -1,0 +1,81 @@
+Source:,
+,
+Date:,
+,
+Tool:,
+,
+Generator:,
+,
+Component Count:,
+,
+Ref,Value
+,
+"BZ1, ",Buzzer
+,
+"BZ2, ",Buzzer
+,
+"C1, C5, ",100µF
+,
+"C2, C4, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, ",100nF
+,
+"C3, ",2.2nF
+,
+"D1, D4, D7, D9, D11, D13, D16, D18, D20, D27, D28, D29, D30, D35, D36, D37, D38, D44, D45, D48, D51, D52, ",SSA36
+,
+"D2, D23, D24, D25, D26, D31, D32, D33, D34, D39, D40, D41, D42, D46, D47, D49, D50, ",SMBJ15A
+,
+"D3, D22, ",DIODE
+,
+"D5, D6, D8, D10, D12, D15, D17, D19, D21, ",LED
+,
+"D14, ",SSA36
+,
+"D43, ",LED
+,
+"J1, J13, J14, J15, J16, J17, J18, J19, J20, J21, J22, J23, J24, J27, ",Conn_01x02_Female
+,
+"J2, ",Conn_01x05_Female
+,
+"J3, J4, ",Conn_01x04_Female
+,
+"J5, J6, J7, J8, J9, J10, J11, J12, ",Conn_01x03_Female
+,
+"J25, J26, ",Conn_01x05_Female
+,
+"JP1, ",Jumper
+,
+"JP2, JP3, JP4, JP5, ",Jumper_NC_Dual
+,
+"K1, K2, K3, K4, K5, K6, K7, K8, ",SONGLE
+,
+"L1, ",100µH
+,
+"Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, ",BC817
+,
+"R1, R2, R6, R9, R12, R15, R18, R21, R24, R27, R30, R34, R36, R37, R38, 
+R47, R48, R49, R50, R65, R66, R67, R68, R73, R77, R78, R82, R84, R85, R87, R90, R93, ",10k
+,
+"R3, ",5.36k
+,
+"R4, ",4.99k
+,
+"R5, R71, ",680
+,
+"R7, R10, R13, R16, R19, R22, R25, R28, ",2.2k
+,
+"R8, R11, R14, R17, R20, R23, R26, R29, R31, R32, R33, R35, R39, R40, R41, R42, R43, R44, 
+R45, R46, R51, R52, R53, R54, R63, R64, R69, R70, R74, R75, R76, R79, R80, R81, R83, R86, R88, R89, R91, R92, R94, ",1k
+,
+"R55, R56, R59, R60, ",8.1k
+,
+"R57, R58, R61, R62, ",4.7k
+,
+"R72, ",0
+,
+"R95, ",0
+,
+"SW1, ",SW_Push
+,
+"U1, ",LT1376CS8TR
+,
+"U2, ",PIC16F1939-PDIP40

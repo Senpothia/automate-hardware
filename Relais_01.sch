@@ -1,0 +1,786 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:DIODE D7
+U 1 1 61CEEC8D
+P 1700 1700
+F 0 "D7" V 1800 2050 50  0000 R CNN
+F 1 "SSA36" V 1700 2050 50  0000 R CNN
+F 2 "diodes_perso:D_SMB_SSA36-Handsoldering" H 1700 1700 50  0001 C CNN
+F 3 "~" H 1700 1700 50  0001 C CNN
+	1    1700 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 1400 2350 1150
+Wire Wire Line
+	1700 1150 1700 1500
+Wire Wire Line
+	2350 2000 2350 2250
+Wire Wire Line
+	2350 2250 2000 2250
+$Comp
+L Transistor_BJT:PN2222A Q1
+U 1 1 61CF008C
+P 1900 2650
+F 0 "Q1" H 2090 2696 50  0000 L CNN
+F 1 "BC817" H 2090 2605 50  0000 L CNN
+F 2 "packages_SO_perso:SOT-23.-BC817kicad_mod" H 2100 2575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 1900 2650 50  0001 L CNN
+	1    1900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 61CF1193
+P 2000 3250
+F 0 "#PWR029" H 2000 3000 50  0001 C CNN
+F 1 "GND" H 2005 3077 50  0000 C CNN
+F 2 "" H 2000 3250 50  0001 C CNN
+F 3 "" H 2000 3250 50  0001 C CNN
+	1    2000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2450 2000 2250
+Connection ~ 2000 2250
+Wire Wire Line
+	2000 2850 2000 3250
+$Comp
+L Device:R R8
+U 1 1 61CF1A06
+P 1250 2650
+F 0 "R8" V 1043 2650 50  0000 C CNN
+F 1 "1k" V 1134 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1180 2650 50  0001 C CNN
+F 3 "~" H 1250 2650 50  0001 C CNN
+	1    1250 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 61CF31D1
+P 1550 3000
+F 0 "R9" H 1480 2954 50  0000 R CNN
+F 1 "10k" H 1480 3045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1480 3000 50  0001 C CNN
+F 3 "~" H 1550 3000 50  0001 C CNN
+	1    1550 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 2650 1550 2650
+Wire Wire Line
+	1550 2850 1550 2650
+Connection ~ 1550 2650
+Wire Wire Line
+	1550 2650 1700 2650
+$Comp
+L power:GND #PWR027
+U 1 1 61CF393E
+P 1550 3250
+F 0 "#PWR027" H 1550 3000 50  0001 C CNN
+F 1 "GND" H 1555 3077 50  0000 C CNN
+F 2 "" H 1550 3250 50  0001 C CNN
+F 3 "" H 1550 3250 50  0001 C CNN
+	1    1550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3150 1550 3250
+Text GLabel 850  2650 0    50   Input ~ 0
+Rel1
+Wire Wire Line
+	850  2650 1100 2650
+$Comp
+L Connector:Conn_01x03_Female J5
+U 1 1 61D50723
+P 3400 1700
+F 0 "J5" V 3338 1512 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 3247 1512 50  0000 R CNN
+F 2 "connectors:conn-3pts-P5mm" H 3400 1700 50  0001 C CNN
+F 3 "~" H 3400 1700 50  0001 C CNN
+	1    3400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2000 2750 2200
+Wire Wire Line
+	2750 2200 3100 2200
+Wire Wire Line
+	3100 2200 3100 1700
+Wire Wire Line
+	3100 1700 3200 1700
+Wire Wire Line
+	3100 1300 2850 1300
+Wire Wire Line
+	2850 1300 2850 1400
+Wire Wire Line
+	3200 1600 3100 1600
+Wire Wire Line
+	3200 1800 3000 1800
+Wire Wire Line
+	3000 1800 3000 1200
+Wire Wire Line
+	3000 1200 2650 1200
+Wire Wire Line
+	2650 1200 2650 1400
+$Comp
+L Device:LED D6
+U 1 1 61DA0298
+P 1200 1500
+F 0 "D6" V 1300 1750 50  0000 R CNN
+F 1 "LED" V 1200 1750 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1200 1500 50  0001 C CNN
+F 3 "~" H 1200 1500 50  0001 C CNN
+	1    1200 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FINDER-40.11 K1
+U 1 1 61CED8A2
+P 2550 1700
+F 0 "K1" V 1983 1700 50  0000 C CNN
+F 1 "SONGLE" V 2074 1700 50  0000 C CNN
+F 2 "relays_perso:Relay_SRD_Series_Form_C" H 3690 1660 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 2550 1700 50  0001 C CNN
+	1    2550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 61DA4F0D
+P 1200 2000
+F 0 "R7" H 1270 2046 50  0000 L CNN
+F 1 "2.2k" H 1270 1955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1130 2000 50  0001 C CNN
+F 3 "~" H 1200 2000 50  0001 C CNN
+	1    1200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1350 1200 1150
+Wire Wire Line
+	1200 1150 1700 1150
+Connection ~ 1700 1150
+Wire Wire Line
+	1200 1650 1200 1850
+Wire Wire Line
+	1700 2250 1700 1900
+Wire Wire Line
+	1200 2150 1200 2250
+Wire Wire Line
+	1200 2250 1700 2250
+Connection ~ 1700 2250
+Wire Wire Line
+	1700 2250 2000 2250
+$Comp
+L pspice:DIODE D9
+U 1 1 61DA7A76
+P 4600 1700
+F 0 "D9" V 4700 2050 50  0000 R CNN
+F 1 "SSA36" V 4600 2050 50  0000 R CNN
+F 2 "diodes_perso:D_SMB_SSA36-Handsoldering" H 4600 1700 50  0001 C CNN
+F 3 "~" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 1400 5250 1150
+Wire Wire Line
+	4600 1150 4600 1500
+Wire Wire Line
+	5250 2000 5250 2250
+Wire Wire Line
+	5250 2250 4900 2250
+$Comp
+L Transistor_BJT:PN2222A Q2
+U 1 1 61DA7B71
+P 4800 2650
+F 0 "Q2" H 4990 2696 50  0000 L CNN
+F 1 "BC817" H 4990 2605 50  0000 L CNN
+F 2 "packages_SO_perso:SOT-23.-BC817kicad_mod" H 5000 2575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4800 2650 50  0001 L CNN
+	1    4800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 61DA7B7B
+P 4900 3250
+F 0 "#PWR032" H 4900 3000 50  0001 C CNN
+F 1 "GND" H 4905 3077 50  0000 C CNN
+F 2 "" H 4900 3250 50  0001 C CNN
+F 3 "" H 4900 3250 50  0001 C CNN
+	1    4900 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2450 4900 2250
+Connection ~ 4900 2250
+Wire Wire Line
+	4900 2850 4900 3250
+$Comp
+L Device:R R11
+U 1 1 61DA7B88
+P 4150 2650
+F 0 "R11" V 3943 2650 50  0000 C CNN
+F 1 "1k" V 4034 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4080 2650 50  0001 C CNN
+F 3 "~" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 61DA7B92
+P 4450 3000
+F 0 "R12" H 4380 2954 50  0000 R CNN
+F 1 "10k" H 4380 3045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4380 3000 50  0001 C CNN
+F 3 "~" H 4450 3000 50  0001 C CNN
+	1    4450 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 2650 4450 2650
+Wire Wire Line
+	4450 2850 4450 2650
+Connection ~ 4450 2650
+Wire Wire Line
+	4450 2650 4600 2650
+$Comp
+L power:GND #PWR030
+U 1 1 61DA7BA0
+P 4450 3250
+F 0 "#PWR030" H 4450 3000 50  0001 C CNN
+F 1 "GND" H 4455 3077 50  0000 C CNN
+F 2 "" H 4450 3250 50  0001 C CNN
+F 3 "" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3150 4450 3250
+Text GLabel 3750 2650 0    50   Input ~ 0
+Rel2
+Wire Wire Line
+	3750 2650 4000 2650
+$Comp
+L Connector:Conn_01x03_Female J6
+U 1 1 61DA7BB1
+P 6300 1700
+F 0 "J6" V 6238 1512 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 6147 1512 50  0000 R CNN
+F 2 "connectors:conn-3pts-P5mm" H 6300 1700 50  0001 C CNN
+F 3 "~" H 6300 1700 50  0001 C CNN
+	1    6300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2000 5650 2200
+Wire Wire Line
+	5650 2200 6000 2200
+Wire Wire Line
+	6000 2200 6000 1700
+Wire Wire Line
+	6000 1700 6100 1700
+Wire Wire Line
+	6000 1300 5750 1300
+Wire Wire Line
+	5750 1300 5750 1400
+Wire Wire Line
+	6100 1600 6000 1600
+Wire Wire Line
+	6100 1800 5900 1800
+Wire Wire Line
+	5900 1800 5900 1200
+Wire Wire Line
+	5900 1200 5550 1200
+Wire Wire Line
+	5550 1200 5550 1400
+$Comp
+L Device:LED D8
+U 1 1 61DA7BD2
+P 4100 1500
+F 0 "D8" V 4200 1750 50  0000 R CNN
+F 1 "LED" V 4100 1750 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4100 1500 50  0001 C CNN
+F 3 "~" H 4100 1500 50  0001 C CNN
+	1    4100 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FINDER-40.11 K2
+U 1 1 61DA7BDC
+P 5450 1700
+F 0 "K2" V 4883 1700 50  0000 C CNN
+F 1 "SONGLE" V 4974 1700 50  0000 C CNN
+F 2 "relays_perso:Relay_SRD_Series_Form_C" H 6590 1660 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 5450 1700 50  0001 C CNN
+	1    5450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 61DA7BE6
+P 4100 2000
+F 0 "R10" H 4170 2046 50  0000 L CNN
+F 1 "2.2k" H 4170 1955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4030 2000 50  0001 C CNN
+F 3 "~" H 4100 2000 50  0001 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1350 4100 1150
+Wire Wire Line
+	4100 1150 4600 1150
+Connection ~ 4600 1150
+Wire Wire Line
+	4100 1650 4100 1850
+Wire Wire Line
+	4600 2250 4600 1900
+Wire Wire Line
+	4100 2150 4100 2250
+Wire Wire Line
+	4100 2250 4600 2250
+Connection ~ 4600 2250
+Wire Wire Line
+	4600 2250 4900 2250
+$Comp
+L pspice:DIODE D11
+U 1 1 61DB0F29
+P 6150 4450
+F 0 "D11" V 6250 4800 50  0000 R CNN
+F 1 "SSA36" V 6150 4800 50  0000 R CNN
+F 2 "diodes_perso:D_SMB_SSA36-Handsoldering" H 6150 4450 50  0001 C CNN
+F 3 "~" H 6150 4450 50  0001 C CNN
+	1    6150 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 4150 6800 3900
+Wire Wire Line
+	6150 3900 6150 4250
+Wire Wire Line
+	6800 4750 6800 5000
+Wire Wire Line
+	6800 5000 6450 5000
+$Comp
+L Transistor_BJT:PN2222A Q3
+U 1 1 61DB1102
+P 6350 5400
+F 0 "Q3" H 6540 5446 50  0000 L CNN
+F 1 "BC817" H 6540 5355 50  0000 L CNN
+F 2 "packages_SO_perso:SOT-23.-BC817kicad_mod" H 6550 5325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 6350 5400 50  0001 L CNN
+	1    6350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 61DB110C
+P 6450 6000
+F 0 "#PWR035" H 6450 5750 50  0001 C CNN
+F 1 "GND" H 6455 5827 50  0000 C CNN
+F 2 "" H 6450 6000 50  0001 C CNN
+F 3 "" H 6450 6000 50  0001 C CNN
+	1    6450 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5200 6450 5000
+Connection ~ 6450 5000
+Wire Wire Line
+	6450 5600 6450 6000
+$Comp
+L Device:R R14
+U 1 1 61DB1119
+P 5700 5400
+F 0 "R14" V 5493 5400 50  0000 C CNN
+F 1 "1k" V 5584 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5630 5400 50  0001 C CNN
+F 3 "~" H 5700 5400 50  0001 C CNN
+	1    5700 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 61DB1123
+P 6000 5750
+F 0 "R15" H 5930 5704 50  0000 R CNN
+F 1 "10k" H 5930 5795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5930 5750 50  0001 C CNN
+F 3 "~" H 6000 5750 50  0001 C CNN
+	1    6000 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 5400 6000 5400
+Wire Wire Line
+	6000 5600 6000 5400
+Connection ~ 6000 5400
+Wire Wire Line
+	6000 5400 6150 5400
+$Comp
+L power:GND #PWR033
+U 1 1 61DB1131
+P 6000 6000
+F 0 "#PWR033" H 6000 5750 50  0001 C CNN
+F 1 "GND" H 6005 5827 50  0000 C CNN
+F 2 "" H 6000 6000 50  0001 C CNN
+F 3 "" H 6000 6000 50  0001 C CNN
+	1    6000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5900 6000 6000
+Text GLabel 5300 5400 0    50   Input ~ 0
+Rel3
+Wire Wire Line
+	5300 5400 5550 5400
+$Comp
+L Connector:Conn_01x03_Female J7
+U 1 1 61DB1142
+P 7850 4450
+F 0 "J7" V 7788 4262 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 7697 4262 50  0000 R CNN
+F 2 "connectors:conn-3pts-P5mm" H 7850 4450 50  0001 C CNN
+F 3 "~" H 7850 4450 50  0001 C CNN
+	1    7850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4750 7200 4950
+Wire Wire Line
+	7200 4950 7550 4950
+Wire Wire Line
+	7550 4950 7550 4450
+Wire Wire Line
+	7550 4450 7650 4450
+Wire Wire Line
+	7550 4050 7300 4050
+Wire Wire Line
+	7300 4050 7300 4150
+Wire Wire Line
+	7650 4350 7550 4350
+Wire Wire Line
+	7650 4550 7450 4550
+Wire Wire Line
+	7450 4550 7450 3950
+Wire Wire Line
+	7450 3950 7100 3950
+Wire Wire Line
+	7100 3950 7100 4150
+$Comp
+L Device:LED D10
+U 1 1 61DB1163
+P 5650 4250
+F 0 "D10" V 5700 4550 50  0000 R CNN
+F 1 "LED" V 5600 4550 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5650 4250 50  0001 C CNN
+F 3 "~" H 5650 4250 50  0001 C CNN
+	1    5650 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 61DB1177
+P 5650 4750
+F 0 "R13" H 5720 4796 50  0000 L CNN
+F 1 "2.2k" H 5720 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5580 4750 50  0001 C CNN
+F 3 "~" H 5650 4750 50  0001 C CNN
+	1    5650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4100 5650 3900
+Wire Wire Line
+	5650 3900 6150 3900
+Connection ~ 6150 3900
+Wire Wire Line
+	5650 4400 5650 4600
+Wire Wire Line
+	6150 5000 6150 4650
+Wire Wire Line
+	5650 4900 5650 5000
+Wire Wire Line
+	5650 5000 6150 5000
+Connection ~ 6150 5000
+Wire Wire Line
+	6150 5000 6450 5000
+$Comp
+L pspice:DIODE D14
+U 1 1 61DB118B
+P 9050 4450
+F 0 "D14" V 9150 4800 50  0000 R CNN
+F 1 "SSA36" V 9050 4800 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 9050 4450 50  0001 C CNN
+F 3 "~" H 9050 4450 50  0001 C CNN
+	1    9050 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 4150 9700 3900
+Wire Wire Line
+	9050 3900 9050 4250
+Wire Wire Line
+	9700 4750 9700 5000
+Wire Wire Line
+	9700 5000 9350 5000
+$Comp
+L Transistor_BJT:PN2222A Q4
+U 1 1 61DB119A
+P 9250 5400
+F 0 "Q4" H 9440 5446 50  0000 L CNN
+F 1 "BC817" H 9440 5355 50  0000 L CNN
+F 2 "packages_SO_perso:SOT-23.-BC817kicad_mod" H 9450 5325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 9250 5400 50  0001 L CNN
+	1    9250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 61DB11A4
+P 9350 6000
+F 0 "#PWR038" H 9350 5750 50  0001 C CNN
+F 1 "GND" H 9355 5827 50  0000 C CNN
+F 2 "" H 9350 6000 50  0001 C CNN
+F 3 "" H 9350 6000 50  0001 C CNN
+	1    9350 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5200 9350 5000
+Connection ~ 9350 5000
+Wire Wire Line
+	9350 5600 9350 6000
+$Comp
+L Device:R R17
+U 1 1 61DB11B1
+P 8600 5400
+F 0 "R17" V 8393 5400 50  0000 C CNN
+F 1 "1k" V 8484 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8530 5400 50  0001 C CNN
+F 3 "~" H 8600 5400 50  0001 C CNN
+	1    8600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 61DB11BB
+P 8900 5750
+F 0 "R18" H 8830 5704 50  0000 R CNN
+F 1 "10k" H 8830 5795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8830 5750 50  0001 C CNN
+F 3 "~" H 8900 5750 50  0001 C CNN
+	1    8900 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 5400 8900 5400
+Wire Wire Line
+	8900 5600 8900 5400
+Connection ~ 8900 5400
+Wire Wire Line
+	8900 5400 9050 5400
+$Comp
+L power:GND #PWR036
+U 1 1 61DB11C9
+P 8900 6000
+F 0 "#PWR036" H 8900 5750 50  0001 C CNN
+F 1 "GND" H 8905 5827 50  0000 C CNN
+F 2 "" H 8900 6000 50  0001 C CNN
+F 3 "" H 8900 6000 50  0001 C CNN
+	1    8900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5900 8900 6000
+Text GLabel 8200 5400 0    50   Input ~ 0
+Rel4
+Wire Wire Line
+	8200 5400 8450 5400
+$Comp
+L Connector:Conn_01x03_Female J8
+U 1 1 61DB11DA
+P 10750 4450
+F 0 "J8" V 10688 4262 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 10597 4262 50  0000 R CNN
+F 2 "connectors:conn-3pts-P5mm" H 10750 4450 50  0001 C CNN
+F 3 "~" H 10750 4450 50  0001 C CNN
+	1    10750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 4750 10100 4950
+Wire Wire Line
+	10100 4950 10450 4950
+Wire Wire Line
+	10450 4950 10450 4450
+Wire Wire Line
+	10450 4450 10550 4450
+Wire Wire Line
+	10450 4050 10200 4050
+Wire Wire Line
+	10200 4050 10200 4150
+Wire Wire Line
+	10550 4350 10450 4350
+Wire Wire Line
+	10550 4550 10350 4550
+Wire Wire Line
+	10350 4550 10350 3950
+Wire Wire Line
+	10350 3950 10000 3950
+Wire Wire Line
+	10000 3950 10000 4150
+$Comp
+L Relay:FINDER-40.11 K4
+U 1 1 61DB1205
+P 9900 4450
+F 0 "K4" V 9333 4450 50  0000 C CNN
+F 1 "SONGLE" V 9424 4450 50  0000 C CNN
+F 2 "relays_perso:Relay_SRD_Series_Form_C" H 11040 4410 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 9900 4450 50  0001 C CNN
+	1    9900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4100 8550 3900
+Wire Wire Line
+	8550 3900 9050 3900
+Connection ~ 9050 3900
+Wire Wire Line
+	8550 4400 8550 4600
+Wire Wire Line
+	9050 5000 9050 4650
+Wire Wire Line
+	8550 4900 8550 5000
+Wire Wire Line
+	8550 5000 9050 5000
+Connection ~ 9050 5000
+Wire Wire Line
+	9050 5000 9350 5000
+$Sheet
+S 1400 5100 2050 1500
+U 61E29AD0
+F0 "Relais_02" 50
+F1 "Relais_02.sch" 50
+$EndSheet
+Wire Wire Line
+	1700 1150 2350 1150
+Wire Wire Line
+	4600 1150 5250 1150
+Wire Wire Line
+	6150 3900 6800 3900
+Wire Wire Line
+	9050 3900 9700 3900
+$Comp
+L power:+12V #PWR028
+U 1 1 61FEAC4F
+P 1700 950
+F 0 "#PWR028" H 1700 800 50  0001 C CNN
+F 1 "+12V" H 1715 1123 50  0000 C CNN
+F 2 "" H 1700 950 50  0001 C CNN
+F 3 "" H 1700 950 50  0001 C CNN
+	1    1700 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 950  1700 1150
+$Comp
+L power:+12V #PWR031
+U 1 1 61FF0478
+P 4600 950
+F 0 "#PWR031" H 4600 800 50  0001 C CNN
+F 1 "+12V" H 4615 1123 50  0000 C CNN
+F 2 "" H 4600 950 50  0001 C CNN
+F 3 "" H 4600 950 50  0001 C CNN
+	1    4600 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 950  4600 1150
+$Comp
+L power:+12V #PWR034
+U 1 1 61FF5831
+P 6150 3750
+F 0 "#PWR034" H 6150 3600 50  0001 C CNN
+F 1 "+12V" H 6165 3923 50  0000 C CNN
+F 2 "" H 6150 3750 50  0001 C CNN
+F 3 "" H 6150 3750 50  0001 C CNN
+	1    6150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3750 6150 3900
+$Comp
+L power:+12V #PWR037
+U 1 1 61FFB09E
+P 9050 3700
+F 0 "#PWR037" H 9050 3550 50  0001 C CNN
+F 1 "+12V" H 9065 3873 50  0000 C CNN
+F 2 "" H 9050 3700 50  0001 C CNN
+F 3 "" H 9050 3700 50  0001 C CNN
+	1    9050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3700 9050 3900
+$Comp
+L Relay:FINDER-40.11 K3
+U 1 1 61DB116D
+P 7000 4450
+F 0 "K3" V 6433 4450 50  0000 C CNN
+F 1 "SONGLE" V 6524 4450 50  0000 C CNN
+F 2 "relays_perso:Relay_SRD_Series_Form_C" H 8140 4410 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 7000 4450 50  0001 C CNN
+	1    7000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 62352A8B
+P 8550 4750
+F 0 "R16" H 8620 4796 50  0000 L CNN
+F 1 "2.2k" H 8620 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8480 4750 50  0001 C CNN
+F 3 "~" H 8550 4750 50  0001 C CNN
+	1    8550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4050 7550 4350
+Wire Wire Line
+	10450 4050 10450 4350
+Wire Wire Line
+	3100 1300 3100 1600
+Wire Wire Line
+	6000 1300 6000 1600
+$Comp
+L Device:LED D12
+U 1 1 61DB11FB
+P 8550 4250
+F 0 "D12" V 8600 4500 50  0000 R CNN
+F 1 "LED" V 8500 4500 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8550 4250 50  0001 C CNN
+F 3 "~" H 8550 4250 50  0001 C CNN
+	1    8550 4250
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

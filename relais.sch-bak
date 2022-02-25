@@ -1,0 +1,840 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:DIODE D?
+U 1 1 61CEEC8D
+P 1700 1700
+F 0 "D?" V 1800 2050 50  0000 R CNN
+F 1 "DIODE" V 1700 2050 50  0000 R CNN
+F 2 "" H 1700 1700 50  0001 C CNN
+F 3 "~" H 1700 1700 50  0001 C CNN
+	1    1700 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 1400 2350 1150
+Wire Wire Line
+	2350 1150 2000 1150
+Wire Wire Line
+	1700 1150 1700 1500
+Wire Wire Line
+	2350 2000 2350 2250
+Wire Wire Line
+	2350 2250 2000 2250
+$Comp
+L Transistor_BJT:PN2222A Q?
+U 1 1 61CF008C
+P 1900 2650
+F 0 "Q?" H 2090 2696 50  0000 L CNN
+F 1 "PN2222A" H 2090 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2100 2575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 1900 2650 50  0001 L CNN
+	1    1900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61CF1193
+P 2000 3250
+F 0 "#PWR?" H 2000 3000 50  0001 C CNN
+F 1 "GND" H 2005 3077 50  0000 C CNN
+F 2 "" H 2000 3250 50  0001 C CNN
+F 3 "" H 2000 3250 50  0001 C CNN
+	1    2000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2450 2000 2250
+Connection ~ 2000 2250
+Wire Wire Line
+	2000 2850 2000 3250
+$Comp
+L Device:R R?
+U 1 1 61CF1A06
+P 1250 2650
+F 0 "R?" V 1043 2650 50  0000 C CNN
+F 1 "R" V 1134 2650 50  0000 C CNN
+F 2 "" V 1180 2650 50  0001 C CNN
+F 3 "~" H 1250 2650 50  0001 C CNN
+	1    1250 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61CF31D1
+P 1550 3000
+F 0 "R?" H 1480 2954 50  0000 R CNN
+F 1 "R" H 1480 3045 50  0000 R CNN
+F 2 "" V 1480 3000 50  0001 C CNN
+F 3 "~" H 1550 3000 50  0001 C CNN
+	1    1550 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 2650 1550 2650
+Wire Wire Line
+	1550 2850 1550 2650
+Connection ~ 1550 2650
+Wire Wire Line
+	1550 2650 1700 2650
+$Comp
+L power:GND #PWR?
+U 1 1 61CF393E
+P 1550 3250
+F 0 "#PWR?" H 1550 3000 50  0001 C CNN
+F 1 "GND" H 1555 3077 50  0000 C CNN
+F 2 "" H 1550 3250 50  0001 C CNN
+F 3 "" H 1550 3250 50  0001 C CNN
+	1    1550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3150 1550 3250
+Text GLabel 850  2650 0    50   Input ~ 0
+Rel1
+Wire Wire Line
+	850  2650 1100 2650
+Text GLabel 1850 800  0    50   Input ~ 0
+12V
+Wire Wire Line
+	1850 800  2000 800 
+Wire Wire Line
+	2000 800  2000 1150
+Connection ~ 2000 1150
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 61D50723
+P 3400 1700
+F 0 "J?" V 3338 1512 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 3247 1512 50  0000 R CNN
+F 2 "" H 3400 1700 50  0001 C CNN
+F 3 "~" H 3400 1700 50  0001 C CNN
+	1    3400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2000 2750 2200
+Wire Wire Line
+	2750 2200 3100 2200
+Wire Wire Line
+	3100 2200 3100 1700
+Wire Wire Line
+	3100 1700 3200 1700
+Wire Wire Line
+	3100 1600 3100 1400
+Wire Wire Line
+	3100 1300 2850 1300
+Wire Wire Line
+	2850 1300 2850 1400
+Wire Wire Line
+	3200 1600 3100 1600
+Wire Wire Line
+	3200 1800 3000 1800
+Wire Wire Line
+	3000 1800 3000 1200
+Wire Wire Line
+	3000 1200 2650 1200
+Wire Wire Line
+	2650 1200 2650 1400
+Text GLabel 2900 2450 2    50   Output ~ 0
+C1
+Wire Wire Line
+	2900 2450 2750 2450
+Wire Wire Line
+	2750 2450 2750 2200
+Connection ~ 2750 2200
+Text GLabel 3200 1200 2    50   Output ~ 0
+NC1
+Wire Wire Line
+	3200 1200 3000 1200
+Connection ~ 3000 1200
+Text GLabel 3200 1400 2    50   Output ~ 0
+NO1
+Wire Wire Line
+	3200 1400 3100 1400
+Connection ~ 3100 1400
+Wire Wire Line
+	3100 1400 3100 1300
+$Comp
+L Device:LED D?
+U 1 1 61DA0298
+P 1200 1500
+F 0 "D?" V 1239 1382 50  0000 R CNN
+F 1 "LED" V 1148 1382 50  0000 R CNN
+F 2 "" H 1200 1500 50  0001 C CNN
+F 3 "~" H 1200 1500 50  0001 C CNN
+	1    1200 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FINDER-40.11 K?
+U 1 1 61CED8A2
+P 2550 1700
+F 0 "K?" V 1983 1700 50  0000 C CNN
+F 1 "FINDER-40.11" V 2074 1700 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Finder_40.11" H 3690 1660 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 2550 1700 50  0001 C CNN
+	1    2550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DA4F0D
+P 1200 2000
+F 0 "R?" H 1270 2046 50  0000 L CNN
+F 1 "R" H 1270 1955 50  0000 L CNN
+F 2 "" V 1130 2000 50  0001 C CNN
+F 3 "~" H 1200 2000 50  0001 C CNN
+	1    1200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1350 1200 1150
+Wire Wire Line
+	1200 1150 1700 1150
+Connection ~ 1700 1150
+Wire Wire Line
+	1700 1150 2000 1150
+Wire Wire Line
+	1200 1650 1200 1850
+Wire Wire Line
+	1700 2250 1700 1900
+Wire Wire Line
+	1200 2150 1200 2250
+Wire Wire Line
+	1200 2250 1700 2250
+Connection ~ 1700 2250
+Wire Wire Line
+	1700 2250 2000 2250
+$Comp
+L pspice:DIODE D?
+U 1 1 61DA7A76
+P 4600 1700
+F 0 "D?" V 4700 2050 50  0000 R CNN
+F 1 "DIODE" V 4600 2050 50  0000 R CNN
+F 2 "" H 4600 1700 50  0001 C CNN
+F 3 "~" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 1400 5250 1150
+Wire Wire Line
+	5250 1150 4900 1150
+Wire Wire Line
+	4600 1150 4600 1500
+Wire Wire Line
+	5250 2000 5250 2250
+Wire Wire Line
+	5250 2250 4900 2250
+$Comp
+L Transistor_BJT:PN2222A Q?
+U 1 1 61DA7B71
+P 4800 2650
+F 0 "Q?" H 4990 2696 50  0000 L CNN
+F 1 "PN2222A" H 4990 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 2575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4800 2650 50  0001 L CNN
+	1    4800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61DA7B7B
+P 4900 3250
+F 0 "#PWR?" H 4900 3000 50  0001 C CNN
+F 1 "GND" H 4905 3077 50  0000 C CNN
+F 2 "" H 4900 3250 50  0001 C CNN
+F 3 "" H 4900 3250 50  0001 C CNN
+	1    4900 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2450 4900 2250
+Connection ~ 4900 2250
+Wire Wire Line
+	4900 2850 4900 3250
+$Comp
+L Device:R R?
+U 1 1 61DA7B88
+P 4150 2650
+F 0 "R?" V 3943 2650 50  0000 C CNN
+F 1 "R" V 4034 2650 50  0000 C CNN
+F 2 "" V 4080 2650 50  0001 C CNN
+F 3 "~" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DA7B92
+P 4450 3000
+F 0 "R?" H 4380 2954 50  0000 R CNN
+F 1 "R" H 4380 3045 50  0000 R CNN
+F 2 "" V 4380 3000 50  0001 C CNN
+F 3 "~" H 4450 3000 50  0001 C CNN
+	1    4450 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 2650 4450 2650
+Wire Wire Line
+	4450 2850 4450 2650
+Connection ~ 4450 2650
+Wire Wire Line
+	4450 2650 4600 2650
+$Comp
+L power:GND #PWR?
+U 1 1 61DA7BA0
+P 4450 3250
+F 0 "#PWR?" H 4450 3000 50  0001 C CNN
+F 1 "GND" H 4455 3077 50  0000 C CNN
+F 2 "" H 4450 3250 50  0001 C CNN
+F 3 "" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3150 4450 3250
+Text GLabel 3750 2650 0    50   Input ~ 0
+Rel1
+Wire Wire Line
+	3750 2650 4000 2650
+Text GLabel 4750 800  0    50   Input ~ 0
+12V
+Wire Wire Line
+	4750 800  4900 800 
+Wire Wire Line
+	4900 800  4900 1150
+Connection ~ 4900 1150
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 61DA7BB1
+P 6300 1700
+F 0 "J?" V 6238 1512 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 6147 1512 50  0000 R CNN
+F 2 "" H 6300 1700 50  0001 C CNN
+F 3 "~" H 6300 1700 50  0001 C CNN
+	1    6300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2000 5650 2200
+Wire Wire Line
+	5650 2200 6000 2200
+Wire Wire Line
+	6000 2200 6000 1700
+Wire Wire Line
+	6000 1700 6100 1700
+Wire Wire Line
+	6000 1600 6000 1400
+Wire Wire Line
+	6000 1300 5750 1300
+Wire Wire Line
+	5750 1300 5750 1400
+Wire Wire Line
+	6100 1600 6000 1600
+Wire Wire Line
+	6100 1800 5900 1800
+Wire Wire Line
+	5900 1800 5900 1200
+Wire Wire Line
+	5900 1200 5550 1200
+Wire Wire Line
+	5550 1200 5550 1400
+Text GLabel 5800 2450 2    50   Output ~ 0
+C1
+Wire Wire Line
+	5800 2450 5650 2450
+Wire Wire Line
+	5650 2450 5650 2200
+Connection ~ 5650 2200
+Text GLabel 6100 1200 2    50   Output ~ 0
+NC1
+Wire Wire Line
+	6100 1200 5900 1200
+Connection ~ 5900 1200
+Text GLabel 6100 1400 2    50   Output ~ 0
+NO1
+Wire Wire Line
+	6100 1400 6000 1400
+Connection ~ 6000 1400
+Wire Wire Line
+	6000 1400 6000 1300
+$Comp
+L Device:LED D?
+U 1 1 61DA7BD2
+P 4100 1500
+F 0 "D?" V 4139 1382 50  0000 R CNN
+F 1 "LED" V 4048 1382 50  0000 R CNN
+F 2 "" H 4100 1500 50  0001 C CNN
+F 3 "~" H 4100 1500 50  0001 C CNN
+	1    4100 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FINDER-40.11 K?
+U 1 1 61DA7BDC
+P 5450 1700
+F 0 "K?" V 4883 1700 50  0000 C CNN
+F 1 "FINDER-40.11" V 4974 1700 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Finder_40.11" H 6590 1660 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 5450 1700 50  0001 C CNN
+	1    5450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DA7BE6
+P 4100 2000
+F 0 "R?" H 4170 2046 50  0000 L CNN
+F 1 "R" H 4170 1955 50  0000 L CNN
+F 2 "" V 4030 2000 50  0001 C CNN
+F 3 "~" H 4100 2000 50  0001 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1350 4100 1150
+Wire Wire Line
+	4100 1150 4600 1150
+Connection ~ 4600 1150
+Wire Wire Line
+	4600 1150 4900 1150
+Wire Wire Line
+	4100 1650 4100 1850
+Wire Wire Line
+	4600 2250 4600 1900
+Wire Wire Line
+	4100 2150 4100 2250
+Wire Wire Line
+	4100 2250 4600 2250
+Connection ~ 4600 2250
+Wire Wire Line
+	4600 2250 4900 2250
+$Comp
+L pspice:DIODE D?
+U 1 1 61DB0F29
+P 6150 4450
+F 0 "D?" V 6250 4800 50  0000 R CNN
+F 1 "DIODE" V 6150 4800 50  0000 R CNN
+F 2 "" H 6150 4450 50  0001 C CNN
+F 3 "~" H 6150 4450 50  0001 C CNN
+	1    6150 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 4150 6800 3900
+Wire Wire Line
+	6800 3900 6450 3900
+Wire Wire Line
+	6150 3900 6150 4250
+Wire Wire Line
+	6800 4750 6800 5000
+Wire Wire Line
+	6800 5000 6450 5000
+$Comp
+L Transistor_BJT:PN2222A Q?
+U 1 1 61DB1102
+P 6350 5400
+F 0 "Q?" H 6540 5446 50  0000 L CNN
+F 1 "PN2222A" H 6540 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6550 5325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 6350 5400 50  0001 L CNN
+	1    6350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61DB110C
+P 6450 6000
+F 0 "#PWR?" H 6450 5750 50  0001 C CNN
+F 1 "GND" H 6455 5827 50  0000 C CNN
+F 2 "" H 6450 6000 50  0001 C CNN
+F 3 "" H 6450 6000 50  0001 C CNN
+	1    6450 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5200 6450 5000
+Connection ~ 6450 5000
+Wire Wire Line
+	6450 5600 6450 6000
+$Comp
+L Device:R R?
+U 1 1 61DB1119
+P 5700 5400
+F 0 "R?" V 5493 5400 50  0000 C CNN
+F 1 "R" V 5584 5400 50  0000 C CNN
+F 2 "" V 5630 5400 50  0001 C CNN
+F 3 "~" H 5700 5400 50  0001 C CNN
+	1    5700 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DB1123
+P 6000 5750
+F 0 "R?" H 5930 5704 50  0000 R CNN
+F 1 "R" H 5930 5795 50  0000 R CNN
+F 2 "" V 5930 5750 50  0001 C CNN
+F 3 "~" H 6000 5750 50  0001 C CNN
+	1    6000 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 5400 6000 5400
+Wire Wire Line
+	6000 5600 6000 5400
+Connection ~ 6000 5400
+Wire Wire Line
+	6000 5400 6150 5400
+$Comp
+L power:GND #PWR?
+U 1 1 61DB1131
+P 6000 6000
+F 0 "#PWR?" H 6000 5750 50  0001 C CNN
+F 1 "GND" H 6005 5827 50  0000 C CNN
+F 2 "" H 6000 6000 50  0001 C CNN
+F 3 "" H 6000 6000 50  0001 C CNN
+	1    6000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5900 6000 6000
+Text GLabel 5300 5400 0    50   Input ~ 0
+Rel1
+Wire Wire Line
+	5300 5400 5550 5400
+Text GLabel 6300 3550 0    50   Input ~ 0
+12V
+Wire Wire Line
+	6300 3550 6450 3550
+Wire Wire Line
+	6450 3550 6450 3900
+Connection ~ 6450 3900
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 61DB1142
+P 7850 4450
+F 0 "J?" V 7788 4262 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 7697 4262 50  0000 R CNN
+F 2 "" H 7850 4450 50  0001 C CNN
+F 3 "~" H 7850 4450 50  0001 C CNN
+	1    7850 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4750 7200 4950
+Wire Wire Line
+	7200 4950 7550 4950
+Wire Wire Line
+	7550 4950 7550 4450
+Wire Wire Line
+	7550 4450 7650 4450
+Wire Wire Line
+	7550 4350 7550 4150
+Wire Wire Line
+	7550 4050 7300 4050
+Wire Wire Line
+	7300 4050 7300 4150
+Wire Wire Line
+	7650 4350 7550 4350
+Wire Wire Line
+	7650 4550 7450 4550
+Wire Wire Line
+	7450 4550 7450 3950
+Wire Wire Line
+	7450 3950 7100 3950
+Wire Wire Line
+	7100 3950 7100 4150
+Text GLabel 7350 5200 2    50   Output ~ 0
+C1
+Wire Wire Line
+	7350 5200 7200 5200
+Wire Wire Line
+	7200 5200 7200 4950
+Connection ~ 7200 4950
+Text GLabel 7650 3950 2    50   Output ~ 0
+NC1
+Wire Wire Line
+	7650 3950 7450 3950
+Connection ~ 7450 3950
+Text GLabel 7650 4150 2    50   Output ~ 0
+NO1
+Wire Wire Line
+	7650 4150 7550 4150
+Connection ~ 7550 4150
+Wire Wire Line
+	7550 4150 7550 4050
+$Comp
+L Device:LED D?
+U 1 1 61DB1163
+P 5650 4250
+F 0 "D?" V 5689 4132 50  0000 R CNN
+F 1 "LED" V 5598 4132 50  0000 R CNN
+F 2 "" H 5650 4250 50  0001 C CNN
+F 3 "~" H 5650 4250 50  0001 C CNN
+	1    5650 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FINDER-40.11 K?
+U 1 1 61DB116D
+P 7000 4450
+F 0 "K?" V 6433 4450 50  0000 C CNN
+F 1 "FINDER-40.11" V 6524 4450 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Finder_40.11" H 8140 4410 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 7000 4450 50  0001 C CNN
+	1    7000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DB1177
+P 5650 4750
+F 0 "R?" H 5720 4796 50  0000 L CNN
+F 1 "R" H 5720 4705 50  0000 L CNN
+F 2 "" V 5580 4750 50  0001 C CNN
+F 3 "~" H 5650 4750 50  0001 C CNN
+	1    5650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4100 5650 3900
+Wire Wire Line
+	5650 3900 6150 3900
+Connection ~ 6150 3900
+Wire Wire Line
+	6150 3900 6450 3900
+Wire Wire Line
+	5650 4400 5650 4600
+Wire Wire Line
+	6150 5000 6150 4650
+Wire Wire Line
+	5650 4900 5650 5000
+Wire Wire Line
+	5650 5000 6150 5000
+Connection ~ 6150 5000
+Wire Wire Line
+	6150 5000 6450 5000
+$Comp
+L pspice:DIODE D?
+U 1 1 61DB118B
+P 9050 4450
+F 0 "D?" V 9150 4800 50  0000 R CNN
+F 1 "DIODE" V 9050 4800 50  0000 R CNN
+F 2 "" H 9050 4450 50  0001 C CNN
+F 3 "~" H 9050 4450 50  0001 C CNN
+	1    9050 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 4150 9700 3900
+Wire Wire Line
+	9700 3900 9350 3900
+Wire Wire Line
+	9050 3900 9050 4250
+Wire Wire Line
+	9700 4750 9700 5000
+Wire Wire Line
+	9700 5000 9350 5000
+$Comp
+L Transistor_BJT:PN2222A Q?
+U 1 1 61DB119A
+P 9250 5400
+F 0 "Q?" H 9440 5446 50  0000 L CNN
+F 1 "PN2222A" H 9440 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9450 5325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 9250 5400 50  0001 L CNN
+	1    9250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61DB11A4
+P 9350 6000
+F 0 "#PWR?" H 9350 5750 50  0001 C CNN
+F 1 "GND" H 9355 5827 50  0000 C CNN
+F 2 "" H 9350 6000 50  0001 C CNN
+F 3 "" H 9350 6000 50  0001 C CNN
+	1    9350 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5200 9350 5000
+Connection ~ 9350 5000
+Wire Wire Line
+	9350 5600 9350 6000
+$Comp
+L Device:R R?
+U 1 1 61DB11B1
+P 8600 5400
+F 0 "R?" V 8393 5400 50  0000 C CNN
+F 1 "R" V 8484 5400 50  0000 C CNN
+F 2 "" V 8530 5400 50  0001 C CNN
+F 3 "~" H 8600 5400 50  0001 C CNN
+	1    8600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DB11BB
+P 8900 5750
+F 0 "R?" H 8830 5704 50  0000 R CNN
+F 1 "R" H 8830 5795 50  0000 R CNN
+F 2 "" V 8830 5750 50  0001 C CNN
+F 3 "~" H 8900 5750 50  0001 C CNN
+	1    8900 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 5400 8900 5400
+Wire Wire Line
+	8900 5600 8900 5400
+Connection ~ 8900 5400
+Wire Wire Line
+	8900 5400 9050 5400
+$Comp
+L power:GND #PWR?
+U 1 1 61DB11C9
+P 8900 6000
+F 0 "#PWR?" H 8900 5750 50  0001 C CNN
+F 1 "GND" H 8905 5827 50  0000 C CNN
+F 2 "" H 8900 6000 50  0001 C CNN
+F 3 "" H 8900 6000 50  0001 C CNN
+	1    8900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5900 8900 6000
+Text GLabel 8200 5400 0    50   Input ~ 0
+Rel1
+Wire Wire Line
+	8200 5400 8450 5400
+Text GLabel 9200 3550 0    50   Input ~ 0
+12V
+Wire Wire Line
+	9200 3550 9350 3550
+Wire Wire Line
+	9350 3550 9350 3900
+Connection ~ 9350 3900
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 61DB11DA
+P 10750 4450
+F 0 "J?" V 10688 4262 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 10597 4262 50  0000 R CNN
+F 2 "" H 10750 4450 50  0001 C CNN
+F 3 "~" H 10750 4450 50  0001 C CNN
+	1    10750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 4750 10100 4950
+Wire Wire Line
+	10100 4950 10450 4950
+Wire Wire Line
+	10450 4950 10450 4450
+Wire Wire Line
+	10450 4450 10550 4450
+Wire Wire Line
+	10450 4350 10450 4150
+Wire Wire Line
+	10450 4050 10200 4050
+Wire Wire Line
+	10200 4050 10200 4150
+Wire Wire Line
+	10550 4350 10450 4350
+Wire Wire Line
+	10550 4550 10350 4550
+Wire Wire Line
+	10350 4550 10350 3950
+Wire Wire Line
+	10350 3950 10000 3950
+Wire Wire Line
+	10000 3950 10000 4150
+Text GLabel 10250 5200 2    50   Output ~ 0
+C1
+Wire Wire Line
+	10250 5200 10100 5200
+Wire Wire Line
+	10100 5200 10100 4950
+Connection ~ 10100 4950
+Text GLabel 10550 3950 2    50   Output ~ 0
+NC1
+Wire Wire Line
+	10550 3950 10350 3950
+Connection ~ 10350 3950
+Text GLabel 10550 4150 2    50   Output ~ 0
+NO1
+Wire Wire Line
+	10550 4150 10450 4150
+Connection ~ 10450 4150
+Wire Wire Line
+	10450 4150 10450 4050
+$Comp
+L Device:LED D?
+U 1 1 61DB11FB
+P 8550 4250
+F 0 "D?" V 8589 4132 50  0000 R CNN
+F 1 "LED" V 8498 4132 50  0000 R CNN
+F 2 "" H 8550 4250 50  0001 C CNN
+F 3 "~" H 8550 4250 50  0001 C CNN
+	1    8550 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:FINDER-40.11 K?
+U 1 1 61DB1205
+P 9900 4450
+F 0 "K?" V 9333 4450 50  0000 C CNN
+F 1 "FINDER-40.11" V 9424 4450 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_Finder_40.11" H 11040 4410 50  0001 C CNN
+F 3 "https://www.finder-relais.net/de/finder-relais-serie-40.pdf" H 9900 4450 50  0001 C CNN
+	1    9900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DB120F
+P 8550 4750
+F 0 "R?" H 8620 4796 50  0000 L CNN
+F 1 "R" H 8620 4705 50  0000 L CNN
+F 2 "" V 8480 4750 50  0001 C CNN
+F 3 "~" H 8550 4750 50  0001 C CNN
+	1    8550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4100 8550 3900
+Wire Wire Line
+	8550 3900 9050 3900
+Connection ~ 9050 3900
+Wire Wire Line
+	9050 3900 9350 3900
+Wire Wire Line
+	8550 4400 8550 4600
+Wire Wire Line
+	9050 5000 9050 4650
+Wire Wire Line
+	8550 4900 8550 5000
+Wire Wire Line
+	8550 5000 9050 5000
+Connection ~ 9050 5000
+Wire Wire Line
+	9050 5000 9350 5000
+$EndSCHEMATC

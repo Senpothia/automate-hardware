@@ -1,0 +1,367 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:PN2222A Q10
+U 1 1 6212B511
+P 4050 2350
+F 0 "Q10" H 4241 2396 50  0000 L CNN
+F 1 "BC817" H 4241 2305 50  0000 L CNN
+F 2 "packages_SO_perso:SOT-23.-BC817kicad_mod" H 4250 2275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4050 2350 50  0001 L CNN
+	1    4050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R66
+U 1 1 6212BEBF
+P 3600 2750
+F 0 "R66" H 3670 2796 50  0000 L CNN
+F 1 "10k" H 3670 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3530 2750 50  0001 C CNN
+F 3 "~" H 3600 2750 50  0001 C CNN
+	1    3600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R64
+U 1 1 6212CB6F
+P 3250 2350
+F 0 "R64" V 3043 2350 50  0000 C CNN
+F 1 "1k" V 3134 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3180 2350 50  0001 C CNN
+F 3 "~" H 3250 2350 50  0001 C CNN
+	1    3250 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR098
+U 1 1 6212CEC3
+P 4150 3000
+F 0 "#PWR098" H 4150 2750 50  0001 C CNN
+F 1 "GND" H 4155 2827 50  0000 C CNN
+F 2 "" H 4150 3000 50  0001 C CNN
+F 3 "" H 4150 3000 50  0001 C CNN
+	1    4150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR096
+U 1 1 6212D5B1
+P 3600 3000
+F 0 "#PWR096" H 3600 2750 50  0001 C CNN
+F 1 "GND" H 3605 2827 50  0000 C CNN
+F 2 "" H 3600 3000 50  0001 C CNN
+F 3 "" H 3600 3000 50  0001 C CNN
+	1    3600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2550 4150 3000
+Wire Wire Line
+	3600 2900 3600 3000
+Wire Wire Line
+	3600 2600 3600 2350
+Wire Wire Line
+	3400 2350 3600 2350
+Connection ~ 3600 2350
+Wire Wire Line
+	3600 2350 3850 2350
+Text GLabel 2700 2350 0    50   Input ~ 0
+C1
+Wire Wire Line
+	2700 2350 3100 2350
+$Comp
+L Connector:Conn_01x05_Female J25
+U 1 1 6212DE41
+P 6050 1550
+F 0 "J25" H 6078 1576 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 6078 1485 50  0000 L CNN
+F 2 "connectors:conn-5pts-P5mm" H 6050 1550 50  0001 C CNN
+F 3 "~" H 6050 1550 50  0001 C CNN
+	1    6050 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR099
+U 1 1 6212E8B7
+P 3500 850
+F 0 "#PWR099" H 3500 700 50  0001 C CNN
+F 1 "+12V" H 3515 1023 50  0000 C CNN
+F 2 "" H 3500 850 50  0001 C CNN
+F 3 "" H 3500 850 50  0001 C CNN
+	1    3500 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1450 5850 1450
+Wire Wire Line
+	4150 1450 4150 2150
+$Comp
+L Transistor_BJT:PN2222A Q9
+U 1 1 6212F618
+P 3950 4800
+F 0 "Q9" H 4141 4846 50  0000 L CNN
+F 1 "BC817" H 4141 4755 50  0000 L CNN
+F 2 "packages_SO_perso:SOT-23.-BC817kicad_mod" H 4150 4725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 3950 4800 50  0001 L CNN
+	1    3950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R65
+U 1 1 6212F6CA
+P 3500 5200
+F 0 "R65" H 3570 5246 50  0000 L CNN
+F 1 "10k" H 3570 5155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3430 5200 50  0001 C CNN
+F 3 "~" H 3500 5200 50  0001 C CNN
+	1    3500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R63
+U 1 1 6212F6D4
+P 3150 4800
+F 0 "R63" V 2943 4800 50  0000 C CNN
+F 1 "1k" V 3034 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3080 4800 50  0001 C CNN
+F 3 "~" H 3150 4800 50  0001 C CNN
+	1    3150 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR097
+U 1 1 6212F6DE
+P 4050 5450
+F 0 "#PWR097" H 4050 5200 50  0001 C CNN
+F 1 "GND" H 4055 5277 50  0000 C CNN
+F 2 "" H 4050 5450 50  0001 C CNN
+F 3 "" H 4050 5450 50  0001 C CNN
+	1    4050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR095
+U 1 1 6212F6E8
+P 3500 5450
+F 0 "#PWR095" H 3500 5200 50  0001 C CNN
+F 1 "GND" H 3505 5277 50  0000 C CNN
+F 2 "" H 3500 5450 50  0001 C CNN
+F 3 "" H 3500 5450 50  0001 C CNN
+	1    3500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5000 4050 5450
+Wire Wire Line
+	3500 5350 3500 5450
+Wire Wire Line
+	3500 5050 3500 4800
+Wire Wire Line
+	3300 4800 3500 4800
+Connection ~ 3500 4800
+Wire Wire Line
+	3500 4800 3750 4800
+Text GLabel 2600 4800 0    50   Input ~ 0
+C2
+Wire Wire Line
+	2600 4800 3000 4800
+Wire Wire Line
+	5850 1550 4900 1550
+Wire Wire Line
+	4900 1550 4900 4200
+Wire Wire Line
+	4900 4200 4050 4200
+Wire Wire Line
+	4050 4200 4050 4600
+$Comp
+L Transistor_BJT:PN2222A Q12
+U 1 1 62136C39
+P 7850 4700
+F 0 "Q12" H 8041 4746 50  0000 L CNN
+F 1 "BC817" H 8041 4655 50  0000 L CNN
+F 2 "packages_SO_perso:SOT-23.-BC817kicad_mod" H 8050 4625 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 7850 4700 50  0001 L CNN
+	1    7850 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R68
+U 1 1 62136D41
+P 8300 5100
+F 0 "R68" H 8230 5146 50  0000 R CNN
+F 1 "10k" H 8230 5055 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8230 5100 50  0001 C CNN
+F 3 "~" H 8300 5100 50  0001 C CNN
+	1    8300 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R70
+U 1 1 62136D4B
+P 8650 4700
+F 0 "R70" V 8443 4700 50  0000 C CNN
+F 1 "1k" V 8534 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8580 4700 50  0001 C CNN
+F 3 "~" H 8650 4700 50  0001 C CNN
+	1    8650 4700
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 62136D55
+P 7750 5350
+F 0 "#PWR0101" H 7750 5100 50  0001 C CNN
+F 1 "GND" H 7755 5177 50  0000 C CNN
+F 2 "" H 7750 5350 50  0001 C CNN
+F 3 "" H 7750 5350 50  0001 C CNN
+	1    7750 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 62136D5F
+P 8300 5350
+F 0 "#PWR0103" H 8300 5100 50  0001 C CNN
+F 1 "GND" H 8305 5177 50  0000 C CNN
+F 2 "" H 8300 5350 50  0001 C CNN
+F 3 "" H 8300 5350 50  0001 C CNN
+	1    8300 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4900 7750 5350
+Wire Wire Line
+	8300 5250 8300 5350
+Wire Wire Line
+	8300 4950 8300 4700
+Wire Wire Line
+	8500 4700 8300 4700
+Connection ~ 8300 4700
+Wire Wire Line
+	8300 4700 8050 4700
+Text GLabel 9200 4700 2    50   Input ~ 0
+C4
+Wire Wire Line
+	9200 4700 8800 4700
+$Comp
+L Transistor_BJT:PN2222A Q11
+U 1 1 6213B76C
+P 7800 2900
+F 0 "Q11" H 7991 2946 50  0000 L CNN
+F 1 "BC817" H 7991 2855 50  0000 L CNN
+F 2 "packages_SO_perso:SOT-23.-BC817kicad_mod" H 8000 2825 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 7800 2900 50  0001 L CNN
+	1    7800 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R67
+U 1 1 6213B8CA
+P 8250 3300
+F 0 "R67" H 8180 3346 50  0000 R CNN
+F 1 "10k" H 8180 3255 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8180 3300 50  0001 C CNN
+F 3 "~" H 8250 3300 50  0001 C CNN
+	1    8250 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R69
+U 1 1 6213B8D4
+P 8600 2900
+F 0 "R69" V 8393 2900 50  0000 C CNN
+F 1 "1k" V 8484 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8530 2900 50  0001 C CNN
+F 3 "~" H 8600 2900 50  0001 C CNN
+	1    8600 2900
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR0100
+U 1 1 6213B8DE
+P 7700 3550
+F 0 "#PWR0100" H 7700 3300 50  0001 C CNN
+F 1 "GND" H 7705 3377 50  0000 C CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6213B8E8
+P 8250 3550
+F 0 "#PWR0102" H 8250 3300 50  0001 C CNN
+F 1 "GND" H 8255 3377 50  0000 C CNN
+F 2 "" H 8250 3550 50  0001 C CNN
+F 3 "" H 8250 3550 50  0001 C CNN
+	1    8250 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3100 7700 3550
+Wire Wire Line
+	8250 3450 8250 3550
+Wire Wire Line
+	8250 3150 8250 2900
+Wire Wire Line
+	8450 2900 8250 2900
+Connection ~ 8250 2900
+Wire Wire Line
+	8250 2900 8000 2900
+Text GLabel 9150 2900 2    50   Input ~ 0
+C3
+Wire Wire Line
+	9150 2900 8750 2900
+Wire Wire Line
+	7700 2300 7700 2700
+Wire Wire Line
+	7750 4500 7750 4200
+Wire Wire Line
+	7750 4200 5550 4200
+Wire Wire Line
+	5550 4200 5550 1650
+Wire Wire Line
+	5550 1650 5850 1650
+Wire Wire Line
+	5850 1750 5700 1750
+Wire Wire Line
+	5700 1750 5700 2300
+Wire Wire Line
+	5700 2300 7700 2300
+$Comp
+L pspice:DIODE D13
+U 1 1 61D84182
+P 3500 1150
+F 0 "D13" H 3500 1415 50  0000 C CNN
+F 1 "SSA36" H 3500 1324 50  0000 C CNN
+F 2 "diodes_perso:D_SMB_SSA36-Handsoldering" H 3500 1150 50  0001 C CNN
+F 3 "~" H 3500 1150 50  0001 C CNN
+	1    3500 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 850  3500 950 
+Wire Wire Line
+	3500 1350 5850 1350
+$Sheet
+S 1250 6100 1350 1150
+U 61E3B977
+F0 "GPIO" 50
+F1 "GPIO.sch" 50
+$EndSheet
+$EndSCHEMATC
